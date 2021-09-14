@@ -7,6 +7,12 @@
   <title>Document</title>
 </head>
 <body>
-  Ring Ding Dong Digiri Digiri
+  <button id="on-btn">Vibration On</button>
 </body>
+<script>
+  const $onBtn = document.querySelector("#on-btn")
+  $onBtn.addEventListener("click", () => {
+    window.navigator.vibrate(200)
+  })
+</script>
 </html>
