@@ -12,7 +12,7 @@
 <script>
   const $onBtn = document.querySelector("#on-btn")
   $onBtn.addEventListener("click", () => {
-    window.navigator.vibrate(200)
+    window.navigator.vibrate([3000, 500, 2000, 500, 1000, 500, 2000, 500, 3000, 500])
   })
 </script>
 </html>
